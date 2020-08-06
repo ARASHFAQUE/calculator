@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="calculator-grid">
+        <div class="output">
+            <div id="result"></div>
+        </div>
+    <button id="delete-all" class="span-two" onclick="clearResult()">AC</button>
+    <button id="delete" onclick="deleteOneByOne()">DEL</button>
+    <button class="operation" onclick="numberInput('/')">/</button>
+    <button class="number" onclick="numberInput(1)">1</button>
+    <button class="number" onclick="numberInput(2)">2</button>
+    <button class="number" onclick="numberInput(3)">3</button>
+    <button class="operation" onclick="numberInput('*')">x</button>
+    <button class="number" onclick="numberInput(4)">4</button>
+    <button class="number" onclick="numberInput(5)">5</button>
+    <button class="number" onclick="numberInput(6)">6</button>
+    <button class="operation" onclick="numberInput('+')">+</button>
+    <button class="number" onclick="numberInput(7)">7</button>
+    <button class="number" onclick="numberInput(8)">8</button>
+    <button class="number" onclick="numberInput(9)">9</button>
+    <button class="operation" onclick="numberInput('-')">-</button>
+    <button class="number" onclick="numberInput('.')">.</button>
+    <button class="number" onclick="numberInput(0)">0</button>
+    <button id="equal" class="span-two" onclick="calculateInputs()">=</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
